@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  host: { 'collision-id': 'AppComponent' },
   standalone: true,
   imports: [RouterOutlet],
   template: ` <router-outlet></router-outlet> `,
