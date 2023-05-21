@@ -3,8 +3,21 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 export const routeMeta: RouteMeta = {
-  title: 'About Analog',
-  canActivate: [() => true],
+  title: 'About',
+  meta: [
+    {
+      name: 'description',
+      content: 'About page',
+    },
+    {
+      name: 'og:title',
+      content: 'About page',
+    },
+    {
+      name: 'og:description',
+      content: 'About page',
+    },
+  ],
 };
 
 @Component({
